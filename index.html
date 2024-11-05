@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vimal Kannan - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+        
+        .nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+        
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .section {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .section h2 {
+            margin-top: 0;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .skill {
+            margin: 10px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+            .section {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="IMG_20241105_113039.jpg" alt="Vimal Kannan">
+        <h1>Vimal Kannan</h1>
+        <p>Department of Computer Science and Engineering</p>
+        <p>R P Sarathy Institute of Technology</p>
+    </div>
+    <div class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="content">
+        <div class="section" id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Vimal Kannan, a passionate computer science enthusiast.</p>
+        </div>
+        <div class="section" id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill">Programming Languages</div>
+                <div class="skill">Data Structures</div>
+                <div class="skill">Algorithms</div>
+                <div class="skill">Web Development</div>
+                <div class="skill">Machine Learning</div>
+                <div class="skill">Database Management</div>
+                <div class="skill">Operating Systems</div>
+            </div>
+        </div>
+        <div class="section" id="projects">
+            <h2>Projects</h2>
+            <p>Coming soon...</p>
+        </div>
+        <div class="section" id="contact">
+            <h2>Contact</h2>
+            <p>Get in touch with me:</p>
+            <p>Email: <a href="mailto:vimal@example.com">vimal@example.com</a></p>
+            <p>Phone: 123-456-7890</p>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2023 Vimal Kannan
+    </div>
+    <script>
+        // Add active class to nav links on scroll
+        window.addEventListener("scroll", function() {
+            var navLinks = document.querySelectorAll(".nav a");
+            var sections = document.querySelectorAll(".section");
+            var scrollPosition = window.scrollY;
+            
+            sections.forEach(function(section, index) {
+                if (scrollPosition >= section.offsetTop - 100) {
+                    navLinks.forEach(function(link) {
+                        link.classList.remove("active");
+                    });
+                    nav
